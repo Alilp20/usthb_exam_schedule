@@ -4,7 +4,7 @@ import { usthbLogo } from "../assets";
 import Button from "./Button";
 const Nav = () => {
   return (
-    <header className="flex w-full px-2 py-3 items-center justify-between">
+    <header className="flex w-full px-2 pt-3 items-center justify-between z-10">
       <Link to="/">
         <img
           src={usthbLogo}
@@ -32,6 +32,7 @@ const Nav = () => {
       </nav>
       <Button
         href="https://finfo.usthb.dz/index.php/examens/"
+        additionalStyling="md:block hidden"
       >
         visit exams
       </Button>

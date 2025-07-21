@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+body {
+  overflow: hidden;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    to bottom right,
+    #141a2c 0%,
+    #1c327b 60%,
+    #3452b5 100%
+  );
+}
+
+.gradient-button {
+  background: linear-gradient(to bottom right, #2880b0 0%, #80d8c3 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-fade-in-left {
+  animation: fadeInLeft 0.8s ease-out both;
+}

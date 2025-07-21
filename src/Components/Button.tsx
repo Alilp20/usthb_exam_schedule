@@ -30,7 +30,7 @@ const Button = ({
         ${px || "px-4"}
         ${py || "py-2"}
         ${text || "text-md font-medium text-white uppercase"}
-        cursor-pointer inline-block ${additionalStyling || ""}`.trim();
+        cursor-pointer inline-block whitespace-nowrap  ${additionalStyling || ""}`.trim();
 
   if (buttonAction) {
     return (

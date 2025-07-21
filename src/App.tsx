@@ -6,11 +6,13 @@ function App() {
   return (
     <>
       <Router>
-        <div className="gradient-background h-screen py-5 px-14">
+        <div className="gradient-background min-h-screen flex flex-col px-4 lg:px-14">
           <Nav />
-          <Routes>
-            <Route path="/" element={<Home />}/>
-          </Routes>
+          <main className="flex-grow flex items-center justify-center">
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </main>
         </div>
       </Router>
     </>

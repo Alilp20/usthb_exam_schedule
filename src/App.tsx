@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import History from "./pages/History";
 import Calender from "./pages/Calender";
-import Contatc from "./pages/Contatc";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
               <Route path="/search" element={<Search />} />
               <Route path="/history" element={<History />} />
               <Route path="/calender" element={<Calender />} />
-              <Route path="/contact" element={<Contatc />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
         </div>

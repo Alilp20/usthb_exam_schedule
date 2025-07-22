@@ -1,30 +1,23 @@
-import Button from "../Components/Button";
-import { searchImage } from "../assets";
-import { RxArrowTopRight } from "react-icons/rx";
 import { BiSearch } from "react-icons/bi";
+import { searchImage } from "../assets";
+import Button from "../Components/Button";
 
-const Search = () => {
+const History = () => {
   const handleClick = () => {
-    console.log("clicked to search");
+    console.log("clicked to search for previous exams");
   };
   return (
     <section className="w-full flex flex-col lg:flex-row justify-around items-center px-6 lg:px-12 gap-10 lg:gap-0">
       <div className="flex flex-col gap-8 animate-fade-in-up lg:items-start items-center text-center lg:text-left">
         <p className="text-white font-bold text-2xl sm:text-3xl lg:text-6xl leading-snug">
-          Search
+          Search Previous Exams
         </p>
         <p className="text-[#A9B0C8] font-light text-xs sm:text-sm lg:text-md ml-2">
-          Find your exam schedule by entering the course code (e.g. BIGDATA A).
-          Feel free to search more broadly using the relevant code for your
-          course if needed!
+          Find your exam by entering the module code (e.g. ENDO). Feel free to
+          search more broadly using the relevant code for your course if needed!
         </p>
         <p className="text-[#A9B0C8] font-light text-xs sm:text-sm lg:text-md ml-2">
-          To add an exam to your calendar, simply click the button. Once you are
-          done, go to the Calendar section and export your personalized
-          schedule!
-        </p>
-        <p className="text-[#A9B0C8] font-light text-xs sm:text-sm lg:text-md ml-2">
-          Additionally, you have the option to search for specific classes
+          Additionally, you have the option to search for more than one module
           simultaneously. Just separate your search queries with a comma, for
           example: ANAD, AMP.
         </p>
@@ -45,16 +38,6 @@ const Search = () => {
             <BiSearch size={28} />
           </Button>
         </div>
-        <Button
-          to="/search"
-          text="font-light uppercase text-white text-sm sm:text-base lg:text-lg"
-          px="px-3 sm:px-6"
-          edges="rounded-full"
-          additionalStyling="flex items-center gap-2 w-fit"
-        >
-          <RxArrowTopRight size={24} />
-          Add To Calender
-        </Button>
       </div>
       <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[460px] animate-fade-in-left">
         <img
@@ -67,4 +50,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default History;

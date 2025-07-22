@@ -23,7 +23,7 @@ const Nav = () => {
                 <navlink.icon
                   height={30}
                   width={30}
-                  className="md:w-10 md:h-10"
+                  className="md:w-8 md:h-8"
                 />
               </Link>
             </li>

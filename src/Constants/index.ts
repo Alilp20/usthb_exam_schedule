@@ -3,31 +3,31 @@ import { HiHome, HiSearch, HiCalendar, HiBackspace, HiMail } from "react-icons/h
 const NavLinks = [
     {
         id: 1,
-        href: "",
+        href: "/",
         label: "Home",
         icon: HiHome,
     },
     {
         id: 2,
-        href: "",
+        href: "/search",
         label: "Search",
         icon: HiSearch,
     },
     {
         id: 3,
-        href: "",
+        href: "/calender",
         label: "Calender",
         icon: HiCalendar,
     },
     {
         id: 4,
-        href: "",
+        href: "/exam",
         label: "Exam History",
         icon: HiBackspace,
     },
     {
         id: 5,
-        href: "",
+        href: "/contact",
         label: "Contact",
         icon: HiMail,
     },

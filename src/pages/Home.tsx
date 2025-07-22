@@ -12,7 +12,7 @@ const Home = () => {
           Add your exams to your calendar with ease! Just search, click add, and export...
         </p>
         <Button
-          href="#"
+          to="/search"
           text="font-light uppercase text-white text-sm sm:text-base lg:text-lg"
           px="px-6 sm:px-10"
           additionalStyling="w-fit"

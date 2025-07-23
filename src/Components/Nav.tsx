@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLinks } from "../Constants";
 import { Link } from "react-router-dom";
 import { usthbLogo } from "../assets";
@@ -10,6 +10,17 @@ const Nav = () => {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <header className="flex w-full px-2 pt-3 items-center justify-between z-10 relative">
       {/* Logo */}
@@ -17,7 +28,7 @@ const Nav = () => {
         <img
           src={usthbLogo}
           alt="Logo of USTHB university"
-          className="sm:w-[100px] sm:h-[100px] w-[75px] h-[75px] object-contain cursor-pointer"
+          className="sm:w-[100px] sm:h-[100px] w-[65px] h-[65px] object-contain cursor-pointer"
         />
       </Link>
 
@@ -44,12 +55,12 @@ const Nav = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="absolute top-0 left-0 w-full h-screen bg-[#10121B]/20 backdrop-blur-md px-6 py-4 pt-20 flex flex-col items-center gap-4 md:hidden z-20">
+        <div className="absolute top-0 left-0 w-full h-screen bg-[#10121B]/40 backdrop-blur-md px-6 py-4 flex flex-col justify-center items-center gap-4 md:hidden z-20">
           {NavLinks.map((navlink) => (
             <Link
               key={navlink.id}
               to={navlink.href}
-              className="text-[#A9B0C8] hover:text-[#C6CFEC] flex items-center gap-3 text-[2rem]"
+              className="text-[#A9B0C8] hover:text-[#C6CFEC] flex items-center gap-3 text-[2.5rem]"
               onClick={toggleMenu}
             >
               <span>{navlink.label}</span>

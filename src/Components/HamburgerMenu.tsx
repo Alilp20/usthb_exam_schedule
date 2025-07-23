@@ -24,7 +24,7 @@ const HamburgerMenu = ({ isOpen, toggleMenu }: Props) => {
       <span
         className={`bg-[#A9B0C8] block transition-all duration-300 ease-out 
                     h-[2px] w-8 rounded-sm ${
-                      isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+                      isOpen ? "-rotate-45 -translate-y-1.5" : "translate-y-0.5"
                     }`}
       ></span>
     </button>

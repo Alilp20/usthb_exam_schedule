@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  overflow: hidden;
+  overflow: auto;
 }
 
 .gradient-background {
@@ -44,4 +44,11 @@ body {
 }
 .animate-fade-in-left {
   animation: fadeInLeft 0.8s ease-out both;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }

@@ -7,7 +7,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full flex flex-col lg:flex-row flex-wrap justify-around items-center px-4 sm:px-6 lg:px-12 gap-10">
+    <section className="w-full flex flex-col lg:flex-row flex-wrap justify-around items-center px-4 sm:px-6 lg:px-12 gap-10 py-4 sm:py-6">
       {/* Text Section */}
       <div className="flex flex-col gap-6 animate-fade-in-up items-center lg:items-start text-center lg:text-left max-w-xl">
         <p className="text-white font-bold text-3xl sm:text-4xl lg:text-6xl leading-snug">
@@ -27,7 +27,9 @@ const Contact = () => {
         <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-4">
           {myLinks.map((link) => (
             <a key={link.id} href={link.href}>
-              <link.icon size={50} className="text-[#00A5FF]" />
+              <link.icon
+              className="text-[#00A5FF] hover:text-[#00C8FF] transition ease-in-out duration-300 w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20"
+              />
             </a>
           ))}
         </div>
@@ -70,18 +72,20 @@ const Contact = () => {
             className="bg-[#434448] text-white placeholder-gray-400 px-4 py-3 rounded focus:outline-none transition resize-none"
             rows={5}
           />
-        </form>
 
-        {/* Send Button */}
-        <Button
-          buttonAction={handleClick}
-          bg="bg-transparent border border-[#00A5FF]"
-          text="text-[#00A5FF] text-md font-medium uppercase"
-          px="px-10"
-          additionalStyling="hover:scale-110 hover:brightness-125 transition-transform ease-in-out duration-300"
-        >
-          Send
-        </Button>
+          {/* Button to send*/}
+          <div className="flex justify-end mt-4">
+            <Button
+              buttonAction={handleClick}
+              bg="bg-transparent border border-[#00A5FF]"
+              text="text-[#00A5FF] text-md font-medium uppercase"
+              px="px-10"
+              additionalStyling="hover:scale-110 hover:brightness-125 transition-transform ease-in-out duration-300"
+            >
+              Send
+            </Button>
+          </div>
+        </form>
       </div>
     </section>
   );

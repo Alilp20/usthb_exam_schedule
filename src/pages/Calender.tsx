@@ -7,7 +7,7 @@ const Calender = () => {
     console.log("clicked to export calender");
   };
   return (
-    <section className="w-full flex flex-col lg:flex-row justify-around items-center px-6 lg:px-12 gap-10 lg:gap-0">
+    <section className="w-full flex flex-col lg:flex-row justify-between items-center px-6 lg:px-12 gap-10 lg:gap-0">
       <div className="flex flex-col gap-8 animate-fade-in-up lg:items-start items-center text-center lg:text-left">
         <p className="text-white font-bold text-2xl sm:text-3xl lg:text-6xl leading-snug">
           Calender
@@ -27,7 +27,7 @@ const Calender = () => {
           Export Calender
         </Button>
       </div>
-      <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[460px] animate-fade-in-left">
+      <div className="w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[600px] animate-fade-in-left">
         <img
           src={calender}
           alt="Usthb exam schedule"

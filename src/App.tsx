@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="gradient-background min-h-screen flex flex-col px-4 lg:px-14">
+        <div className="gradient-background min-h-screen flex flex-col md:px-4 lg:px-14 md:py-5">
           <Nav />
           <main className="flex-grow flex items-center justify-center">
             <Routes>

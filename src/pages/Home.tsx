@@ -20,7 +20,7 @@ const Home = () => {
           GET STARTED
         </Button>
       </div>
-      <div className="w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[588px] animate-fade-in-left">
+      <div className="w-full max-w-[200px] sm:max-w-[500px] lg:max-w-[588px] animate-fade-in-left">
         <img
           src={exams}
           alt="Usthb exam schedule"

@@ -56,7 +56,7 @@ const Search = () => {
           Add To Calender
         </Button>
       </div>
-      <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[460px] animate-fade-in-left">
+      <div className="w-full max-w-[150px] sm:max-w-[400px] lg:max-w-[460px] animate-fade-in-left">
         <img
           src={searchImage}
           alt="Usthb exam schedule"
